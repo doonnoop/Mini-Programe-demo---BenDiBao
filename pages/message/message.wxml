@@ -1,0 +1,14 @@
+<view class='card'>
+  <text class='card-title'>标题1111</text>
+  <text class='card-date'>2019-02-25</text>
+  <image src='https://image.suning.cn/uimg/aps/material/155083392205513957.jpg?format=_is_1242w_610h' class='card-img' mode='aspectFill'></image>
+  <text class='card-desc'>越努力，越幸运～</text>
+  <text class='card-read arrow'>查看详情</text>
+</view>
+<view class='card'>
+  <text class='card-title'>标题2222</text>
+  <text class='card-date'>2019-02-25</text>
+  <image src='https://image.suning.cn/uimg/aps/material/155083392205513957.jpg?format=_is_1242w_610h' class='card-img' mode='aspectFill'></image>
+  <text class='card-desc'>越努力，越幸运～</text>
+  <text class='card-read arrow'>查看详情</text>
+</view>

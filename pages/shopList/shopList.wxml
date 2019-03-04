@@ -1,0 +1,28 @@
+<view class='shop cell-item'>
+    <image class="shop-img" src="http://p1.meituan.net/200.0/deal/26fa67467bb03256e97a82a06ba6bfd452415.jpg@117_0_468_468a%7C267h_267w_2e_90Q"></image>
+    <view class="shop-info">
+        <text class="shop-title">店铺名称</text>
+        <text class="shop-tel">电话：</text>
+        <text class="shop-address">地址：</text>
+        <text class="shop-time">营业时间：</text>
+    </view>
+    <view class="shop-star">
+        <view class="star-after">★★★★★</view>
+        <view class="star-before" style='width:50%'>★★★★★</view>
+    </view>
+</view>
+<view class='shop cell-item'wx:for="{{ shopList }}" wx:key="id">
+    <image class="shop-img" src="{{ item.images[0] }}"></image>
+    <view class="shop-info">
+        <text class="shop-title ellipsis">{{ item.name }}</text>
+        <text class="shop-tel">电话：{{ item.phone }}</text>
+        <text class="shop-address">地址：{{ item.address }}</text>
+        <text class="shop-time">营业时间：{{ item.businessHours }}</text>
+    </view>
+    <view class="shop-star">
+        <view class="star-after">★★★★★</view>
+        <view class="star-before" style='width:{{ item.score }}%'>★★★★★</view>
+    </view>
+</view>
+<view class="loadmore loading" wx:if = "{{ hasMore }}">正在加载...</view>
+<view class="loadmore" wx:else>没有更多了～ </view>
